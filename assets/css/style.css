@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #44478d
+	
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	background-color:
+}
+
+#middle {
+	font-size: 24px;
+	color: #faf7d5;
+	text-align: center;
+}
+
+#instructions {
+	font-size: 24px;
+	color: #faf7d5;
+	text-align: left;
+
+}
+
+
