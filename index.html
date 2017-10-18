@@ -7,25 +7,24 @@
 
 </head>
 <body>
-<div class="header">
-	<img src="http://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/iei8ymnibhtazpihoawv.jpg">
-</div>
+	<div class="header">
+		<img src="http://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/iei8ymnibhtazpihoawv.jpg">
+		S
+	</div>
 
 	<div class="wrapper">
 		<section id="middle">
 			<h1>Current Word</h1>
 			<br>
 			<br>
-			<div class="underscores">_  _  _  _  _  _</div>
+			<div class="underscores"></div>
 			<br>
 			<br>
-			<h2>Definition</h2>
-			<div class="definition"></div>
+			<h2>Letters Guessed:</h2>
+			<div class="guess"></div>
 			<br>
-			<h2>Guesses:</h2>
-			<div class="rightGuess"></div>
-			<h2>Wrong Guesses:<h2>
-				<div class="wrongGuess"></div>
+			<h2>Lives Remaining:<h2>
+				<div class="lives"></div>
 				<br>
 				<h2>Wins: </h2>
 				<h2>Losses: </h2>
@@ -39,5 +38,37 @@
 			<p>Enter the letter that you think corresponds to the word. Remember, this is the Urban Dictionary edition. Words may be slang words or acronyms. </p>
 		</div>
 
-	</body>
-	</html>
+
+		<script type="text/javascript">
+
+	//Variables in the game
+
+	var underscores = ""
+	var lives = 10
+	var wins = 0
+	var losses = 0
+	var guess = []
+
+	//Word to guess will be chosen from array below
+
+	var words = ['bae', 'trap', 'thot', 'fire']
+
+	//Each letter will also be in an array
+	var alphabetArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+	//This will pull a random word form the words array
+	var rand = words[Math.floor(Math.random() * words.length)];
+
+
+	document.onkeyup = function(event) {
+	
+	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+	
+	if (word.indexOf (userGuess) > -1) {
+
+
+</script>
+
+
+</body>
+</html>
